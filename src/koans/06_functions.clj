@@ -8,10 +8,10 @@
   (= 20 (multiply-by-ten 2))
 
   "But they can also be defined inline"
-  (= 6 ((fn [n] (* 3 n)) 2))
+  (= 4 ((fn [n] (* 2 n)) 2))
 
   "Or using even shorter syntax"
-  (= 450 (#(* 15 %) 30))
+  (= 30 (#(* 15 %) 2))
 
   "Short anonymous functions may take multiple arguments"
   (= 15 (#(+ %1 %2 %3) 4 5 6))
